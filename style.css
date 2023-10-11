@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+header{
+    background-color: rgba(6, 94, 124, 1);
+}
+
+#cabeçalho {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    justify-content: space-between;
+    gap: 2.0rem;
+    margin: 1.5rem 3.0rem;
+    align-items: center;
+}
+
+
+.vetor {
+    
+    width: 4.0rem;
+    height: 4.0rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.vetor img {
+    margin-left: 0.8rem;
+    margin-top: 0.8rem;
+    
+}
+
+.search-box input{
+    width: 100%;
+    height: 5.0rem;
+
+  
+    border: none;
+    border-radius: 1.0rem;
+
+    filter: opacity(5.0rem);
+    background-color:  rgb(136, 175, 188);
+    opacity: 1.0;
+}
+
+
+.search-box label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.search-box input::placeholder {
+    opacity: 0.56;
+    color: white;
+    text-align: center;
+}
+
+
+
+#app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+}
+
+main{
+    overflow: scroll;
+}
+
+.cat1 {
+    width: 100%;
+    height: 21.9rem;
+    object-fit: cover;
+}
+
+#container h2{
+    font-family: 'Mulish', sans-serif;
+    color: rgba(32, 32, 36, 1);
+    line-height: 160%;
+    font-size: 2.0rem;
+    margin-left: 15px;
+
+}
+.icons{
+    display: flex;
+    gap: 1.0rem;
+    margin-left: 15px;
+}
+
+.icons div img{
+    margin-left: 1.2rem;
+    margin-top: 1.2rem;
+}
+.icon1, .icon2{
+    width: 4.0rem;
+    height: 4.0rem;
+    border-radius: 50%;
+    background-color: rgba(6, 94, 124, 1);
+}
+
+.textC {
+    margin-left: 15px;
+    margin-top: 1.2rem;
+    line-height: 160%;
+    font-size: 1.2rem;
+    font-family: 'Mulish', sans-serif;
+    color: rgba(32, 32, 36, 1);
+
+}
+
+#knowMore{
+    display: grid;
+    gap: 3.0rem;
+    margin-left: 15px;
+    margin-top: 30px;
+
+}
+.catImg{
+    display: flex;
+}
+
+.catImg img{
+    width: 151px;
+    height: 84px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.h2{
+    margin-left: 15px;
+    margin-top: 30px;
+
+    font-family: 'Mulish', sans-serif;
+    color: rgba(32, 32, 36, 1);
+    line-height: 160%;
+}
+
+.txt{
+    display: grid;
+    margin-left: 1.5rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+footer {
+    text-align: center;
+    font-size: 2.0rem;
+    font-family: 'Mulish', sans-serif;
+    background-color: rgba(6, 94, 124, 1);
+    height: 5.0rem;
+    
+    
+}
+
+footer p {
+    margin-top: 1.5rem;
+    color: white;
+}
+ 
+@media (min-width:500px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+
+
+
+
+
+
